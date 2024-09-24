@@ -53,16 +53,16 @@ h1,h2,h3,h4,h5,h6 {
 /* Grids */
 .colomn_grid {
     display: flex;
-    align-items: center;
+    align-items: start;
     justify-content: space-between;
     padding: 40px 20px;
+
 }
 
 .row_grid {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    align-items: center;
 
     position: relative;
 }
@@ -158,4 +158,59 @@ h1,h2,h3,h4,h5,h6 {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+}
+
+/* Authorisation info */
+.profile-photo {
+    width: 250px;
+    height: auto;
+    border-radius: 0%;
+    
+    cursor: pointer;
+}
+
+.form-group {
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #6c3483;
+}
+
+input, select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #d3d3d3;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+input[type="file"] {
+    display: none;
+}
+
+input.invalid {
+    border-color: red;
+}
+
+input.valid {
+    border-color: green;
+}
+
+button {
+    background-color: #6c3483;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #5a2d6f;
 }
