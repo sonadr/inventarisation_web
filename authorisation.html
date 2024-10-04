@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/style2.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap" rel="stylesheet">
+    <title>Регистрация</title>
+</head>
+<body>
+    <div class="header_base">
+        <header class="header">
+            <div class="container">
+                <div class="header_inner">
+                    <div class="header_logo">{Craft~Code}</div>
+                    
+                    <nav class="nav">
+                        <a class="nav_link" href="index.html">О нас</a>
+                        <a class="nav_link" href="authorisation.html">Личный кабинет</a>
+                        <a class="nav_link" href="authorisation.html">Инвентарь</a>
+                        <a class="nav_link" href="support.html">Связь с поддержкой</a>
+                    </nav>
+                </div>
+            </div>
+        </header>
+    </div>
+    
+    <div class="line">
+        <div class="container">
+            <p>Авторизация</p>
+        </div>
+    </div>
+
+    
+    <div class="container">
+        <form action="" method="get" enctype="multipart/form-data" id="registerForm">
+            <div class="autho">
+
+                <div class="row_grid">
+
+                    <div class="form-group">
+                        <label for="email">Почта:</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+        
+                    <div class="form-group">
+                        <label for="password">Пароль:</label>
+                        <input type="password" id="password" name="password" required>
+                        <small>Пароль должен содержать не менее 8 символов.</small>
+                    </div>
+
+                    <div class="form-group">
+                        <button id="enterBtn" type="button" href="account.html">Войти</button>
+                    </div>
+                    
+                </div>
+    
+            </div> 
+        </form>
+        <a href="account.html">here</a>
+    </div>
+
+    <div class="contacts_line">
+        <div class="contacts_block">
+            <p>craftcode@sfedu.ru</p>
+            <p>+7-(9**)-***-**-**</p>
+        </div>
+    </div>
+
+    <script src="script2.js"></script>
+</body>
+</html>
