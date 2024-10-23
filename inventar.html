@@ -67,19 +67,19 @@
             <th>Ответственное лицо</th>
         </thead>
         <tbody id="tableBody">
-            {% for warehouses in warehouses %} 
+            {% for item in items %} 
                 <tr>
                     <td>
-                        {{ .serial-number }} <br>
-                        <button class="qr-btn" data-qrcode="{{ warehouses.qr_code }}">Показать QR</button>
+                        {{ item.serial_number }} <br>
+                        <button class="qr-btn" data-qrcode="{{ item.qr_code }}">Показать QR</button>
                     </td>
-                    <td>{{ .name }}</td>
-                    <td>{{ .location }}</td>
-                    <td>{{ .responsible-employee }}</td>
+                    <td>{{ item.name }}</td>
+                    <td>{{ item.warehouse.name }}</td>
+                    <td>{{ item.warehouse.responsible_employee }}</td> <!-- если ответственное лицо привязано к складу -->
                 </tr>
             {% empty %}
                 <tr>
-                    <td colspan="4">No products found.</td>
+                    <td colspan="4">Нет предметов.</td>
                 </tr>
             {% endfor %} 
         </tbody>

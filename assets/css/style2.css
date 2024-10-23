@@ -257,3 +257,8 @@ button:hover {
     height: 70vh; 
     
 }
+
+.support img {
+    display: flex;
+    justify-content: center;
+}
